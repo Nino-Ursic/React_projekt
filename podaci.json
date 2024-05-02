@@ -1,0 +1,121 @@
+{
+  "aktivnosti": [
+    {
+      "id": "1",
+      "imeAktivnosti": "Čiščenje",
+      "vrijeme": "20/6/2024 10:00",
+      "lokacija": "Split",
+      "opis": "Čiščenje smeća iz prirode",
+      "udruga": "zeleni Split",
+      "sudionici": ["Ante", "Marko", "Petar"]
+    },
+    {
+      "id": "1",
+      "imeAktivnosti": "Čiščenje",
+      "vrijeme": "20/6/2024 10:00",
+      "lokacija": "Split",
+      "opis": "Čiščenje smeća iz prirode",
+      "udruga": "zeleni Split",
+      "sudionici": ["Ante", "Marko", "Petar"]
+    },
+    {
+      "id": "1",
+      "imeAktivnosti": "Čiščenje",
+      "vrijeme": "20/6/2024 10:00",
+      "lokacija": "Split",
+      "opis": "Čiščenje smeća iz prirode",
+      "udruga": "zeleni Split",
+      "sudionici": ["Ante", "Marko", "Petar"]
+    }
+  ],
+  "gradovi": [
+    {
+      "id": "1",
+      "ime": "Split"
+    },
+    {
+      "id": "2",
+      "ime": "Zagreb"
+    },
+    {
+      "id": "3",
+      "ime": "Pula"
+    },
+    {
+      "id": "4",
+      "ime": "Dubrovnik"
+    }
+  ],
+  "posao": [
+    {
+      "id": "1",
+      "posao": "Čiščenje"
+    },
+    {
+      "id": "2",
+      "posao": "gradnja"
+    },
+    {
+      "id": "3",
+      "posao": "rad s ljudima"
+    }
+  ],
+  "volonteri": [
+    {
+      "id": "1",
+      "ime": "Ante Antić",
+      "grad": "Split",
+      "posao": "gradnja",
+      "komentari": []
+    },
+    {
+      "id": "1",
+      "ime": "Ante Antić",
+      "grad": "Split",
+      "posao": "gradnja",
+      "komentari": []
+    },
+    {
+      "id": "1",
+      "ime": "Ante Antić",
+      "grad": "Split",
+      "posao": "gradnja",
+      "komentari": []
+    }
+  ],
+  "udruge": [
+    {
+      "id": "1",
+      "ime": "zeleni Split",
+      "adresa": "Splitska 1",
+      "grad": "Split"
+    },
+    {
+      "id": "1",
+      "ime": "zeleni Split",
+      "adresa": "Splitska 1",
+      "grad": "Split"
+    },
+    {
+      "id": "1",
+      "ime": "zeleni Split",
+      "adresa": "Splitska 1",
+      "grad": "Split"
+    }
+  ],
+  "udrugeZahtjevi": [
+    {
+      "id": "2",
+      "ime": "zeleni Zagreb",
+      "adresa": "Zagrebačka 1",
+      "grad": "Zagreb"
+    },
+    {
+      "id": "2",
+      "ime": "zeleni Zagreb",
+      "adresa": "Zagrebačka 1",
+      "grad": "Zagreb"
+    }
+  ]
+  
+}
