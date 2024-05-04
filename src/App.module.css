@@ -75,11 +75,31 @@
   color: red;
   margin: 0px 7px;
 }
-
 .aktivnosti > .section{
   margin-top: 60px;
 }
-
 .sudionik{
   margin-bottom: 5px;
+}
+
+.volonter {
+  height: 200px;
+  max-width: 200px; 
+  background-color: #333;
+  margin: 10px 20px; 
+  padding: 20px;
+  flex-grow: 1; 
+}
+.volonter > *{
+  margin-bottom: 15px;
+}
+.ime{
+  font-size: 25px;
+}
+
+.filtar > *{
+  margin: 15px 0px;
+}
+.opcije > *{
+  margin: 0px 5px;
 }

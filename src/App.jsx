@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
 import Home from './pages/Home.jsx'
 import Aktivnosti from './pages/Aktivnosti.jsx'
 import Volonteri from './pages/Volonteri.jsx'
+import Volonter from './pages/Volonter.jsx'
 import Udruge from './pages/Udruge.jsx'
 import Error from './pages/Error.jsx'
 import Aktivnost from './pages/Aktivnost.jsx'
@@ -31,6 +32,7 @@ function App() {
           <Route path='aktivnosti' element={<Aktivnosti />} />
           <Route path='aktivnosti/:id' element={<Aktivnost />} />
           <Route path='volonteri' element={<Volonteri />}/>
+          <Route path='volonteri/:id' element={<Volonter />} />
           <Route path='udruge' element={<Udruge />} />
           <Route path='*' element={<Error />} />
         </Routes>

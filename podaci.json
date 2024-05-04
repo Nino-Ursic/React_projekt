@@ -29,42 +29,45 @@
     {
       "id": "4",
       "ime": "Dubrovnik"
+    },
+    {
+      "id": "5",
+      "ime": "Makarska"
     }
   ],
-  "posao": [
+  "poslovi": [
     {
       "id": "1",
-      "posao": "Čiščenje"
+      "posao": "fizički poslovi"
     },
     {
       "id": "2",
-      "posao": "gradnja"
+      "posao": "edukacija"
     },
     {
       "id": "3",
-      "posao": "rad s ljudima"
+      "posao": "ekologija"
+    },
+    {
+      "id": "4",
+      "posao": "razno"
     }
   ],
   "volonteri": [
     {
-      "id": "1",
-      "ime": "Ante Antić",
-      "grad": "Split",
-      "posao": "gradnja",
-      "komentari": []
-    },
-    {
       "id": "2",
-      "ime": "Ante Antić",
-      "grad": "Split",
-      "posao": "gradnja",
+      "ime": "Ante Matic",
+      "grad": "Makarska",
+      "posao": "ekologija",
+      "kontakt": "anteantic@gmail.com",
       "komentari": []
     },
     {
       "id": "3",
       "ime": "Ante Antić",
-      "grad": "Split",
-      "posao": "gradnja",
+      "grad": "Zagreb",
+      "posao": "razno",
+      "kontakt": "anteantic@gmail.com",
       "komentari": []
     }
   ],
