@@ -19,6 +19,14 @@ function Aktivnost(){
         setSudionici([...sudionici, name]);
     }
 
+    function brisiSudionika(sudionik){
+        const newSudionici = sudionici.filter(el=>el!==sudionik);
+        axios.patch(`http://localhost:3001/aktivnosti/${aktivnost.id}`, {
+            sudionici : newSudionici
+        }); 
+        setSudionici(newSudionici);
+    }
+
     return(
         <div className={stil.main}>
             <div className={stil.section}>
@@ -36,7 +44,14 @@ function Aktivnost(){
             <div className={stil.section}>
                 <div className={stil.podnaslov}>Sudionici:</div>
                 <div>{sudionici.map((sudionik)=>{
-                    return <div>{sudionik}, </div>
+                    return(
+                        <div className={stil.sudionik}>
+                            {sudionik}
+                            {(user==='admin')&&
+                                <button onClick={()=>brisiSudionika(sudionik)} className={stil.delete}>Delete</button>
+                            }
+                        </div>
+                    ); 
                 })}</div>
             </div>
             <div className={stil.section}>

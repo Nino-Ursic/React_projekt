@@ -29,8 +29,10 @@ function Aktivnosti(){
 
     function saljiPodatke(){
         axios.post('http://localhost:3001/aktivnosti', formaPodaci)
-            .then(rez => console.log(rez));
-        dohvatiAktivnosti();
+            .then(()=>{
+                console.log('post succesful');
+                dohvatiAktivnosti();
+            });
     }
 
     function promjenaUlaza(event){
