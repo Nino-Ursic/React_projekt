@@ -6,12 +6,15 @@ import Aktivnosti from './pages/Aktivnosti.jsx'
 import Volonteri from './pages/Volonteri.jsx'
 import Udruge from './pages/Udruge.jsx'
 import Error from './pages/Error.jsx'
+import Aktivnost from './pages/Aktivnost.jsx'
+import userContext from './components/kontekst.jsx';
 
 function App() {
   const [user, setUser] = useState('user');
 
   return (
     <>
+      <userContext.Provider value={user}>
       <BrowserRouter>
         <nav className={stil.navigation}>
           <NavLink to='/'>Početna</NavLink>
@@ -26,11 +29,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='aktivnosti' element={<Aktivnosti />} />
+          <Route path='aktivnosti/:id' element={<Aktivnost />} />
           <Route path='volonteri' element={<Volonteri />}/>
           <Route path='udruge' element={<Udruge />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>
+      </userContext.Provider>
     </>
   )
 }

@@ -2,30 +2,15 @@
   "aktivnosti": [
     {
       "id": "1",
-      "imeAktivnosti": "Čiščenje",
-      "vrijeme": "20/6/2024 10:00",
+      "imeAktivnosti": "Čišćenje",
+      "vrijeme": "1/6/2024  7:00",
       "lokacija": "Split",
-      "opis": "Čiščenje smeća iz prirode",
-      "udruga": "zeleni Split",
-      "sudionici": ["Ante", "Marko", "Petar"]
-    },
-    {
-      "id": "1",
-      "imeAktivnosti": "Čiščenje",
-      "vrijeme": "20/6/2024 10:00",
-      "lokacija": "Split",
-      "opis": "Čiščenje smeća iz prirode",
-      "udruga": "zeleni Split",
-      "sudionici": ["Ante", "Marko", "Petar"]
-    },
-    {
-      "id": "1",
-      "imeAktivnosti": "Čiščenje",
-      "vrijeme": "20/6/2024 10:00",
-      "lokacija": "Split",
-      "opis": "Čiščenje smeća iz prirode",
-      "udruga": "zeleni Split",
-      "sudionici": ["Ante", "Marko", "Petar"]
+      "opis": "Čišćenje smeća iz parkova",
+      "udruga": "zeleni split",
+      "sudionici": [
+        "Petar",
+        "Ivan"
+      ]
     }
   ],
   "gradovi": [
@@ -69,14 +54,14 @@
       "komentari": []
     },
     {
-      "id": "1",
+      "id": "2",
       "ime": "Ante Antić",
       "grad": "Split",
       "posao": "gradnja",
       "komentari": []
     },
     {
-      "id": "1",
+      "id": "3",
       "ime": "Ante Antić",
       "grad": "Split",
       "posao": "gradnja",
@@ -91,13 +76,13 @@
       "grad": "Split"
     },
     {
-      "id": "1",
+      "id": "2",
       "ime": "zeleni Split",
       "adresa": "Splitska 1",
       "grad": "Split"
     },
     {
-      "id": "1",
+      "id": "3",
       "ime": "zeleni Split",
       "adresa": "Splitska 1",
       "grad": "Split"
@@ -105,17 +90,16 @@
   ],
   "udrugeZahtjevi": [
     {
-      "id": "2",
+      "id": "5",
       "ime": "zeleni Zagreb",
       "adresa": "Zagrebačka 1",
       "grad": "Zagreb"
     },
     {
-      "id": "2",
+      "id": "6",
       "ime": "zeleni Zagreb",
       "adresa": "Zagrebačka 1",
       "grad": "Zagreb"
     }
   ]
-  
 }
