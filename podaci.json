@@ -2,7 +2,7 @@
   "aktivnosti": [
     {
       "id": "1",
-      "imeAktivnosti": "Čišćenje",
+      "imeAktivnosti": "Čišćenje Prirode",
       "vrijeme": "1/6/2024  7:00",
       "lokacija": "Split",
       "opis": "Čišćenje smeća iz parkova",
@@ -10,6 +10,39 @@
       "sudionici": [
         "Petar",
         "Petar"
+      ]
+    },
+    {
+      "id": "7283",
+      "imeAktivnosti": "Gradnja",
+      "vrijeme": "1/6/2024  7:00",
+      "lokacija": "Makarska",
+      "opis": "gradnja kuća za siromašne",
+      "udruga": "pomoć siromašnima",
+      "sudionici": [
+        "Ante",
+        "Mate"
+      ]
+    },
+    {
+      "id": "65f7",
+      "imeAktivnosti": "Sadnja stabala",
+      "vrijeme": "1/7/2024  7:00",
+      "lokacija": "Makarska",
+      "opis": "sadnja stabala u parkove",
+      "udruga": "zeleni svijet",
+      "sudionici": []
+    },
+    {
+      "id": "30b0",
+      "imeAktivnosti": "Gradnja",
+      "vrijeme": "1/6/2024  8:00",
+      "lokacija": "Zagreb",
+      "opis": "gradnja kuća za siromašne",
+      "udruga": "građa",
+      "sudionici": [
+        "Marko",
+        "Ivan"
       ]
     }
   ],
@@ -80,19 +113,19 @@
     },
     {
       "id": "3",
-      "ime": "zelena Makarska",
+      "ime": "građa",
       "adresa": "Vukovarska 1",
       "grad": "Makarska"
     },
     {
       "id": "1343",
-      "ime": "Dubrovnik zeleni",
+      "ime": "zeleni svijet",
       "adresa": "dubrovačka 1",
       "grad": "Dubrovnik"
     },
     {
       "id": "222c",
-      "ime": "Dubrovnik zeleni",
+      "ime": "pomoć siromašnima",
       "adresa": "dubrovačka 1",
       "grad": "Dubrovnik"
     }
@@ -101,43 +134,13 @@
     {
       "id": "5",
       "ime": "zeleni Zagreb",
-      "adresa": "Zagrebačka 1",
+      "adresa": "Zagrebačka 2",
       "grad": "Zagreb"
     },
     {
-      "id": "7a57",
-      "ime": "Dubrovnik zeleni",
-      "adresa": "dubrovačka 1",
-      "grad": "Dubrovnik"
-    },
-    {
-      "id": "7272",
-      "ime": "Dubrovnik zeleni",
-      "adresa": "dubrovačka 1",
-      "grad": "Dubrovnik"
-    },
-    {
-      "id": "7013",
-      "ime": "Dubrovnik zeleni",
-      "adresa": "dubrovačka 1",
-      "grad": "Makarska"
-    },
-    {
-      "id": "7a30",
-      "ime": "Dubrovnik zeleni",
-      "adresa": "dubrovačka 1",
-      "grad": "Pula"
-    },
-    {
       "id": "262c",
-      "ime": "Dubrovnik zeleni",
-      "adresa": "dubrovačka 1",
-      "grad": "Makarska"
-    },
-    {
-      "id": "684e",
-      "ime": "Dubrovnik zeleni",
-      "adresa": "dubrovačka 1",
+      "ime": "zeleni dubrovnik",
+      "adresa": "dubrovačka 2",
       "grad": "Dubrovnik"
     }
   ]

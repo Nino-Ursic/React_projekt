@@ -16,6 +16,25 @@ function Aktivnosti(){
         udruga: '',
         sudionici: []
     })
+    const [sortiranje, setSortiranje] = useState('');
+
+    useEffect(() => {
+        if (sortiranje === 'ime') {
+          const sortedAktivnosti = [...aktivnosti].sort((a, b) => {
+            if (a.imeAktivnosti < b.imeAktivnosti) return -1;
+            if (a.imeAktivnosti > b.imeAktivnosti) return 1;
+            return 0;
+          });
+          setAktivnosti(sortedAktivnosti);
+        } else if (sortiranje === 'udruga') {
+            const sortedAktivnosti = [...aktivnosti].sort((a, b) => {
+                if (a.udruga < b.udruga) return -1;
+                if (a.udruga > b.udruga) return 1;
+                return 0;
+          });
+          setAktivnosti(sortedAktivnosti);
+        }
+    }, [sortiranje]);
 
     useEffect(()=>{
         dohvatiAktivnosti();
@@ -50,7 +69,28 @@ function Aktivnosti(){
 
     return(
         <div className={stil.main}>
-        <div className={stil.naslov}>Aktivnosti</div>
+            <div className={stil.naslov}>Aktivnosti</div>
+            <div className={stil.section}>
+                <div className={stil.podnaslov}>Sortiranje:</div>
+                <div className={stil.opcije}>
+                    <label>
+                        <input
+                            type='radio'
+                            value='ime'
+                            checked={sortiranje==='ime'}
+                            onChange={()=>setSortiranje('ime')} />
+                        Ime 
+                    </label>
+                    <label>
+                        <input
+                            type='radio'
+                            value='udruga'
+                            checked={sortiranje==='udruga'}
+                            onChange={()=>setSortiranje('udruga')} />
+                        Udruga
+                    </label>
+                </div>
+            </div>
             <div className={stil.aktivnosti}>
                 {
                 aktivnosti.map(aktivnost =>{
@@ -58,6 +98,7 @@ function Aktivnosti(){
                         <div className={stil.aktivnost} key={aktivnost.id}>
                             <div className={stil.podnaslov}>{aktivnost.imeAktivnosti}</div>
                             <div>Vrijeme održavanja: {aktivnost.vrijeme}</div>
+                            <div>Udruga: {aktivnost.udruga}</div>
                             <Link to={`/aktivnosti/${aktivnost.id}`} state={aktivnost} >Detalji</Link>
                             {(user === 'admin') &&
                                 <button onClick={()=>brisiAktivnost(aktivnost.id)} className={stil.delete}>Delete</button>
@@ -66,7 +107,9 @@ function Aktivnosti(){
                     )
                 })
                 }
-                <div className={stil.section}>
+            </div>
+            <div>
+                <div className={stil.formaUnos}>
                     <div className={stil.podnaslov}>Dodaj aktivnost:</div>
                     <form onSubmit={saljiPodatke} className={stil.forma}>
                         <div>

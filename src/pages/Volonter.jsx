@@ -11,6 +11,8 @@ function Volonter(){
     const [uredivanje, setUredivanje] = useState(false);
     const [gradovi, setGradovi] = useState([]);
     const [poslovi, setPoslovi] = useState([]);
+    const [komentari, setKomentari] = useState(volonter.komentari);
+    const [komentar, setKomentar] = useState('');
 
     useEffect(()=>{
         axios.get('http://localhost:3001/gradovi')
@@ -30,6 +32,22 @@ function Volonter(){
     function promjenaUlaza(event){
         const {name, value} = event.target;
         setVolonter({...volonter, [name]: value});
+    }
+
+    function ostaviKomentar(){
+        axios.patch(`http://localhost:3001/volonteri/${volonter.id}`, {
+            komentari : [...komentari, komentar]
+        }); 
+        
+        setKomentari([...komentari, komentar]);
+    }
+
+    function brisiKomentar(komentar){
+        const newKomentari = komentari.filter(el=>el!==komentar);
+        axios.patch(`http://localhost:3001/volonteri/${volonter.id}`, {
+            komentari : newKomentari
+        }); 
+        setKomentari(newKomentari);
     }
 
     return(
@@ -95,6 +113,24 @@ function Volonter(){
                         onChange={promjenaUlaza}
                         required/>
                 }
+            </div>
+            <div className={stil.section}>
+                <div className={stil.podnaslov}>Komentari:</div>
+                <div>{komentari.map((komentar)=>{
+                    return(
+                        <div className={stil.sudionik}>
+                            {komentar}
+                            {(user==='admin')&&
+                                <button onClick={()=>brisiKomentar(komentar)} className={stil.delete}>Delete</button>
+                            }
+                        </div>
+                    ); 
+                })}</div>
+                    <label>
+                        Ostavi komentar: 
+                        <input type='text' value={komentar} onChange={e=>setKomentar(e.target.value)}/>
+                    </label>
+                <button onClick={ostaviKomentar}>Spremi</button>
             </div>
             {(user==='admin')&&
                 <div className={stil.section}>

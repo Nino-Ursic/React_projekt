@@ -61,7 +61,7 @@ function Udruge(){
         }
     }, [sortiranje]);
 
-    function promjenaUlaza(){
+    function promjenaUlaza(event){
         const {name, value} = event.target;
         postaviPodatke({...formaPodaci, [name]: value});
     }

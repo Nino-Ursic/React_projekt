@@ -215,7 +215,7 @@ function Volonteri (){
                             />
                         </label>
                     </div>
-                    <button type='submit'>Dodaj Aktivnost</button>
+                    <button type='submit'>Dodaj Volontera</button>
                 </form>
             </div>
             }

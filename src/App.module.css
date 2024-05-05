@@ -4,14 +4,14 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
+  width: 97vw;
   background-color: #333;
   padding: 10px 20px;
   display: flex;
   align-items: center;
 }
 .navigation *{
-  margin: 0 10px;
+  margin: 0 10px; 
 }
 .navigation > div{
   display: inline-block;
@@ -19,13 +19,12 @@
 }
 
 .main{
-  width: 100vw;
   margin: 90px 40px;
+  padding-bottom: 20px;
 }
 .naslov{
   font-weight: 600;
   font-size: 50px;
-  width: 100vw;
   height: 70px;
 }
 .podnaslov{
@@ -34,14 +33,12 @@
   margin-bottom: 10px;
 }
 .section{
-  width: 100vw;
   background-color: #333;
   margin: 20px 0;
   padding: 20px;
 }
 
 .aktivnosti {
-  width: 100vw;
   margin: 60px 40px;
   margin-left: 0;
   display: flex;
@@ -51,7 +48,6 @@
 
 .aktivnost {
   height: 200px;
-  max-width: 150px; 
   background-color: #333;
   margin: 10px 20px; 
   padding: 20px;
@@ -68,6 +64,13 @@
 .forma *{
   padding: 4px 4px;
   margin: 5px 5px;
+}
+
+.formaUnos{
+  width: 300px;
+  background-color: #333;
+  margin: 20px 0;
+  padding: 20px;
 }
 
 .delete{

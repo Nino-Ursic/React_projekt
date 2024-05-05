@@ -55,7 +55,7 @@ function Aktivnost(){
                 })}</div>
             </div>
             <div className={stil.section}>
-                    <div className={stil.podnaslov}>Forma za prijavu:</div>
+                    <div className={stil.podnaslov}>Prijavi se:</div>
                     <label>
                         Ime:
                         <input type='text' value={name} onChange={e=>setName(e.target.value)}/>
