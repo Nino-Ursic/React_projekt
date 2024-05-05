@@ -1,3 +1,4 @@
+
 .navigation{
   position: absolute;
   top: 0;
@@ -20,7 +21,6 @@
 .main{
   width: 100vw;
   margin: 90px 40px;
-  height: 100vh;
 }
 .naslov{
   font-weight: 600;
@@ -44,7 +44,6 @@
   width: 100vw;
   margin: 60px 40px;
   margin-left: 0;
-  max-height: 600px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; 
@@ -102,4 +101,8 @@
 }
 .opcije > *{
   margin: 0px 5px;
+}
+
+.aprove{
+  color: green;
 }

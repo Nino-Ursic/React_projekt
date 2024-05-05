@@ -79,16 +79,22 @@
       "grad": "Split"
     },
     {
-      "id": "2",
-      "ime": "zeleni Split",
-      "adresa": "Splitska 1",
-      "grad": "Split"
+      "id": "3",
+      "ime": "zelena Makarska",
+      "adresa": "Vukovarska 1",
+      "grad": "Makarska"
     },
     {
-      "id": "3",
-      "ime": "zeleni Split",
-      "adresa": "Splitska 1",
-      "grad": "Split"
+      "id": "1343",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Dubrovnik"
+    },
+    {
+      "id": "222c",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Dubrovnik"
     }
   ],
   "udrugeZahtjevi": [
@@ -99,10 +105,40 @@
       "grad": "Zagreb"
     },
     {
-      "id": "6",
-      "ime": "zeleni Zagreb",
-      "adresa": "Zagrebačka 1",
-      "grad": "Zagreb"
+      "id": "7a57",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Dubrovnik"
+    },
+    {
+      "id": "7272",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Dubrovnik"
+    },
+    {
+      "id": "7013",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Makarska"
+    },
+    {
+      "id": "7a30",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Pula"
+    },
+    {
+      "id": "262c",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Makarska"
+    },
+    {
+      "id": "684e",
+      "ime": "Dubrovnik zeleni",
+      "adresa": "dubrovačka 1",
+      "grad": "Dubrovnik"
     }
   ]
 }
